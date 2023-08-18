@@ -1,0 +1,108 @@
+/**
+* 1. Внутренние переменные для цветовой палитры приложения.
+*
+* Важно: не использовать самостоятельно в таблицах стилей, только в качестве
+* значений для глобальных цветовых переменных.
+*
+* Для именования внутренних цветовых переменных использован сервис
+* http://www.color-blindness.com/color-name-hue/
+*/
+
+/**
+* Синяя палитра
+*/
+
+$lucky-point:#243048;
+$summer-sky:#1698d9;
+$summer-sky-light:#2ea8e6;
+$solitude:#e6Ebee;
+
+/**
+* Красная палитра
+*/
+
+$ruby:   #d91667;
+$cerise: #e62e7a;
+$cinnabar: #ed553b;
+
+
+/**
+* Жёлтая палитра
+*/
+
+$laser-lemon: #ffff66;
+
+
+/**
+* Серая палитра
+*/
+
+$white:       #ffffff;
+$white-smoke: #f2f2f2;
+$romance: #f9f5f0;
+$dark-gray:   #b3b3b3;
+$dim-gray:    #666666;
+$black:       #000000;
+
+
+/**
+* 2. Глобальные переменные для цветовой палитры приложения.
+*/
+
+$color-text: $lucky-point;
+$color-text-light: $dark-gray;
+$color-text-dark: $black;
+$color-text-contrasting: $romance;
+$color-text-warning: $laser-lemon;
+
+$bg-primary: $lucky-point;
+
+$color-card-default: $summer-sky;
+$color-card-default-hover: $summer-sky-light;
+$color-card-selected: $ruby;
+$color-card-selected-hover: $cerise;
+$color-card-disabled: $dark-gray;
+$color-card-bg: $white;
+$color-card-shadow: rgba($lucky-point, .2);
+$color-card-border: rgba($lucky-point, .2);
+$color-card-img-bg: $romance;
+
+$color-link: $summer-sky;
+$color-link-hover: $summer-sky-light;
+
+$color-button: $romance;
+$color-button-border: $lucky-point;
+$color-button-primary: $cinnabar;
+$color-button-primary-border: $cinnabar;
+$color-button-secondary-bg: $lucky-point;
+$color-button-primary-bg: $cinnabar;
+
+$color-border: $cinnabar;
+$color-border-huge: rgba($cinnabar, .7);
+
+$color-section-bg-primary: $solitude;
+$color-section-bg-secondary: $lucky-point;
+$color-page-bg: $white;
+$color-feature-icon-bg: $romance;
+
+$color-gallery-item-bg: $lucky-point;
+
+
+/**
+* 3. Брейкпоинты
+*/
+
+$screen-xxs: 0;
+$screen-xs:  320px;
+$screen-sm:  480px;
+$screen-md:  768px;
+$screen-lg:  992px;
+$screen-xl:  1200px;
+$screen-xxl: 1800px;
+
+
+/**
+* 4. Размеры шрифта
+*/
+
+$fs-base: 16px;

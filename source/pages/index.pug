@@ -1,0 +1,185 @@
+include ../blocks/page-header/page-header
+
+
+main
+  section.hero-section
+    .container
+      h1.hero-section__title
+        | Производим тротуарную плитку
+        br
+        span.hero-section__bordered-text высокого качества
+
+      p.subtitle.hero-section__subtitle 
+        | Выбирая нас, вы&nbsp;всегда можете рассчитывать на&nbsp;изготовление плитки
+        br 
+        | в&nbsp;оговорённый срок, её&nbsp;прочность и&nbsp;долговечность
+
+      .button-group.hero-section__button-group
+        a.button.button--secondary.button-group__item(href="#catalog") Смотреть каталог
+        a.button.button-group__item(href="#portfolio") Смотреть работы
+
+
+  section.section#technology
+    .container
+      .text-container
+        h2.section__title Технология производства
+
+        .section__text.raw-content
+          p 
+            | Сначала мы&nbsp;готовим бетонную смесь по&nbsp;апробированному рецепту, затем методом вибролитья
+            | формируем из&nbsp;смеси плиты, которые оставляем застывать и&nbsp;набирать прочность в&nbsp;течение 24-48
+            | часов при определённой температуре и&nbsp;влажности в&nbsp;специально оборудованном для этого помещении.
+            
+
+          p
+            | Суть технологии вибролитья заключается в&nbsp;том, что готовая бетонная смесь, уложенная
+            | в&nbsp;пластиковые формы, помещается на&nbsp;виброплатформу, где в&nbsp;течение нескольких минут под влиянием
+            | непрерывной вибрации равномерно распределяется и&nbsp;уплотняется под собственной тяжестью.
+
+        ol.ordered-features.section__ordered-features
+          li
+            .ordered-features__title 01
+            p.ordered-features__text Использование для производства сырья высокого качества
+
+          li
+            .ordered-features__title 02
+            p.ordered-features__text Строгое соблюдение технологических норм производства
+
+          li
+            .ordered-features__title 03
+            p.ordered-features__text Соответствие готовых изделий стандарту ГОСТ 17608-91
+
+
+  section.section.section--most-notable#advantages
+    .container
+      h2.section__title.section__title--complex Преимущества нашей плитки
+
+      p.subtitle.section__subtitle
+        | Мы&nbsp;предоставляем гарантию на&nbsp;10&nbsp;лет, потому что уверены в&nbsp;высоком качестве нашей
+        | продукции
+
+      ul.features.section__features
+        li.features__item.features__item--hardness
+          h3.features__title Высокая прочность
+          p.features__text Измеряется прочностью исходной цементной смеси и&nbsp;равна М500
+
+        li.features__item.features__item--frost-resistance
+          h3.features__title Морозостойкость
+          p.features__text Выдерживает без разрушения 350 циклов замораживания и&nbsp;оттаивания
+
+        li.features__item.features__item--low-abrasion
+          h3.features__title Низкая истираемость
+          p.features__text Хорошо переносит постоянные интенсивные нагрузки, сохраняя свой вид
+          
+        li.features__item.features__item--environmental-friendliness
+          h3.features__title Экологичность
+          p.features__text При нагревании не&nbsp;выделяет токсичные вещества, опасные для человека
+
+
+  section.section.section--more-notable#catalog
+    .container
+      h2.section__title.section__title--complex Каталог плиток
+      p.subtitle.section__subtitle Выберите подходящую вам форму плитки, а&nbsp;цвет подберём вместе
+
+      ul.cards.section__cards
+        li
+          article.card
+            .card__img
+              img(src="img/product-img-1.png" width="205" height="144" alt="")
+
+            .card__body
+              h3.card__title Сахара
+
+              dl.card__table
+                .card__table-row
+                  dt Размер (мм):
+                  dd 570х570х40
+
+                .card__table-row
+                  dt Цена:
+                  dd 800 ₽
+
+                .card__table-row
+                  dt Наличие:
+                  dd В наличии
+
+              a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
+
+        li
+          article.card
+            .card__img
+              img(src="img/product-img-2.png" width="205" height="144" alt="")
+
+            .card__body
+              h3.card__title Каменный цветок
+
+              dl.card__table
+                .card__table-row
+                  dt Размер (мм):
+                  dd 315x230x40
+
+                .card__table-row
+                  dt Цена:
+                  dd 750 ₽
+
+                .card__table-row
+                  dt Наличие:
+                  dd В наличии
+
+              a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
+
+        li
+          article.card
+            .card__img
+              img(src="img/product-img-3.png" width="205" heigth="144" alt="")
+
+            .card__body
+              h3.card__title Бархан
+
+              dl.card__table
+                .card__table-row
+                  dt Размер (мм):
+                  dd 300x300х40, 79x79х40
+
+                .card__table-row
+                  dt Цена:
+                  dd 750 ₽
+
+                .card__table-row
+                  dt Наличие:
+                  dd В наличии
+
+              a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
+
+
+  section.section#portfolio
+    .container
+      .text-container
+        h2.section__title Наши работы
+
+        .section__text.raw-content
+          p 
+            | Если ни&nbsp;одна из&nbsp;выполненных работ вам не&nbsp;подойдёт, вы&nbsp;всегда можете показать нам, чем
+            | вдохновлялись вы&nbsp;или ваш дизайнер при поиске тротуарной плитки. Мы&nbsp;подберём наиболее подходящие
+            | форму и&nbsp;цвет и&nbsp;изготовим ту&nbsp;самую плитку, которую вы&nbsp;искали.
+
+          p 
+            | Обращаем ваше внимание на&nbsp;то, что произведённую плитку укладывает сам заказчик, так как мы&nbsp;пока
+            | не&nbsp;предоставляем таких услуг. Но&nbsp;если у&nbsp;вас возникли вопросы по&nbsp;плитке 
+            | и&nbsp;её&nbsp;эксплуатационным характеристикам, это к&nbsp;нам.
+
+        ul.gallery.section__gallery.grid
+          li.gallery__item.gallery__item--promo
+            p.gallery__item-text Все работы можно посмотреть в нашей #[a.gallery__item-link(href="https://www.instagram.com/p/CvnCXrqtoSB/?igshid=NjZiM2M3MzlxNA==") фотогалерее]
+
+          li.gallery__item
+            img(src="img/gallery-img-1.jpg" alt="")
+
+          li.gallery__item
+            img(src="img/gallery-img-2.jpg" alt="")
+
+          li.gallery__item
+            img(src="img/gallery-img-3.jpg" alt="")
+            
+
+include ../blocks/page-footer/page-footer

@@ -1,0 +1,57 @@
+@use '../../styles/variables' as *;
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.features__item {
+    text-align: center;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 15px;
+        background-color: $color-feature-icon-bg;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%;
+    }
+}
+
+.features__item--hardness {
+    &::before {
+        background-image: url('../../img/feature-icon-1.svg');
+    }
+}
+
+.features__item--frost-resistance {
+    &::before {
+        background-image: url('../../img/feature-icon-2.svg');
+    }
+}
+
+.features__item--low-abrasion {
+    &::before {
+        background-image: url('../../img/feature-icon-3.svg');
+    }
+}
+
+.features__item--environmental-friendliness {
+    &::before {
+        background-image: url('../../img/feature-icon-4.svg');
+    }
+}
+
+.features__title {
+    margin-bottom: 15px;
+}
+
+.features__text {
+    margin: 0;
+}

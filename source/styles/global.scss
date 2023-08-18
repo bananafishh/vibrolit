@@ -1,0 +1,113 @@
+@use 'variables' as *;
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $color-page-bg;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1.05;
+}
+
+
+.link {
+  position: relative;
+  padding: 0;
+  color: $color-link;
+  background: none;
+  border: none;
+  border-bottom: 1px dashed $color-link;
+  transition: color 0.2s, border-color 0.2s;
+
+  &:hover {
+    color: $color-link-hover;
+    border-bottom-color: $color-link-hover;
+  }
+
+  &:focus {
+    outline: 2px dashed $color-text-contrasting;
+  }
+
+  &[type="button"] {
+    font-size: 1em;
+  }
+}
+
+.raw-content {
+  p,
+  ul,
+  ol {
+    margin-top: 0;
+  
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+
+/**
+* Классы-хелперы
+*/
+
+.text-small {
+  font-size: rem(13px, $fs-base);
+  line-height: 1.231;
+  color: $color-text-contrasting;
+
+  &--warning {
+    color: $color-text-warning;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

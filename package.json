@@ -1,0 +1,29 @@
+{
+  "name": "vibrolit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "2.29.3",
+    "gulp": "4.0.2",
+    "gulp-clean": "0.4.0",
+    "gulp-concat": "2.6.1",
+    "gulp-plumber": "1.2.1",
+    "gulp-pug": "5.0.0",
+    "gulp-rimraf": "1.0.0",
+    "gulp-sass": "5.1.0",
+    "gulp-sass-glob-use-forward": "0.1.3",
+    "gulp-uglify-es": "3.0.0",
+    "sass": "1.63.6"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build --production",
+    "test": "npm run stylelint && npm run eslint",
+    "stylelint": "stylelint source/**/*.scss",
+    "eslint": "eslint source/**/*.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,19 @@
+.ordered-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.ordered-features__title {
+    margin-bottom: 10px;
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.ordered-features__text {
+    margin: 0;
+}

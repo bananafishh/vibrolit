@@ -1,0 +1,92 @@
+@use '../../styles/variables' as *;
+
+.section {
+  padding: 55px 0 67px;
+}
+
+.section__title {
+  margin-bottom: 40px;
+  font-size: 50px;
+  line-height: 1.05;
+}
+
+.section__title--complex {
+  margin-bottom: 15px;
+}
+
+.section__subtitle {
+  max-width: 864px;
+  margin: 0 auto 57px;
+}
+
+.section__text {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -45px;
+    width: 5px;
+    height: 100%;
+    background-color: $color-border;
+  }
+}
+
+.section__features {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section__ordered-features {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.section--more-notable {
+  background: $color-section-bg-primary url('../../img/section-bg.svg');
+
+  .section__title,
+  .section__subtitle {
+    text-align: center;
+  }
+}
+
+.section--most-notable {
+  position: relative;
+  color: $color-text-contrasting;
+  background-color: $color-section-bg-secondary;
+
+  .section__title,
+  .section__subtitle {
+    text-align: center;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    width: 9px;
+    background:
+      radial-gradient(circle 9px at 4.5px 4.5px, $color-text-contrasting 50%, transparent 51%),
+      radial-gradient(circle 9px at 4.5px calc(100% - 4.5px), $color-text-contrasting 50%, transparent 51%);
+  }
+
+  &::before {
+    left: 20px;
+  }
+
+  &::after {
+    right: 20px;
+  }
+}
+
+.section__cards {
+  margin: 0;
+}
+
+.section__gallery {
+  margin: 35px 0 0;
+}

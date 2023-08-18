@@ -1,0 +1,37 @@
+@use '../../styles/variables' as *;
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.main-nav__link {
+    display: inline-block;
+    padding: 30px 0 28px;
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: all .15s ease-in-out;
+
+    &:hover,
+    &:focus {
+        border-bottom-color: $color-border;
+    }
+}

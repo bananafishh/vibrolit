@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+.container {
+  max-width: 1360px;
+  padding-right: 70px;
+  padding-left: 70px;
+  margin: 0 auto;
+}
+
+.text-container {
+  max-width: 848px;
+  padding-left: 45px;
+}
+
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+[class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-2 {
+  width: 16.64%;
+}
+
+.col-3 {
+  width: 33.28%;
+}
+
+.col-4 {
+  width: 33.36%;
+}
+
+.col-8 {
+  width: 66.72%;
+}

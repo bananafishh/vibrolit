@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.page-header {
+    background-color: $color-page-bg;
+}
+
+.page-header__row {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__address {
+    text-align: right;
+}
+
+.page-header__phone {
+    font-family: Oswald, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: normal;
+    color: inherit;
+    text-decoration: none;
+}

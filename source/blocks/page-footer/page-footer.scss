@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+
+.page-footer {
+    padding: 24px 0;
+    color: $color-text-contrasting;
+    background-color: $bg-primary;
+}
+
+.page-footer__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.page-footer__address {
+    font-size: 18px;
+    font-style: normal;
+    text-align: right;
+}
+
+.page-footer__phone {
+    color: inherit;
+    text-decoration: none;
+}

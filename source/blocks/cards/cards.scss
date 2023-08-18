@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.cards__item {
+  
+}
