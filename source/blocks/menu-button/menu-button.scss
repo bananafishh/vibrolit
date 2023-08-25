@@ -1,0 +1,58 @@
+@use '../../styles/variables' as *;
+
+.menu-button {
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        right: 9px;
+        width: 25px;
+        height: 2px;
+        background-color: $bg-primary;
+        transition: all .2s ease-in-out;
+        transition-delay: 0s;
+    }
+
+    &::before {
+        top: 13px;
+    }
+
+    &::after {
+        bottom: 12px;
+    }
+}
+
+.menu-button__label {
+    display: block;
+    margin-right: -5px;
+    font-size: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $bg-primary;
+    transition: all .2s ease-in-out;
+    transition-delay: .2s;
+}
+
+.menu-button_opened {
+    .menu-button__label {
+        transform: scaleX(0);
+        transition-delay: 0s;
+    }
+    
+    &::before,
+    &::after {
+        transition-delay: .2s;
+    }
+
+    &::before {
+        top: 20px;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        bottom: 21px;
+        transform: rotate(-45deg);
+    }
+}

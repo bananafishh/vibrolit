@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    padding: 0;
+    background-color: $bg-secondary;
+    border: none;
+    border-radius: 5px;
+}
+
+.icon-button__text {
+
+}
+
+@media (min-width: $screen-lg) {
+    .icon-button {
+        display: none;
+    }
+}

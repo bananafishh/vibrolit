@@ -2,7 +2,7 @@
 
 .features {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     padding: 0;
     list-style: none;
@@ -54,4 +54,10 @@
 
 .features__text {
     margin: 0;
+}
+
+@media (min-width: $screen-xl) {
+    .features {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

@@ -2,8 +2,8 @@
 
 .container {
   max-width: 1360px;
-  padding-right: 70px;
-  padding-left: 70px;
+  min-width: $screen-xs;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -37,4 +37,16 @@
 
 .col-8 {
   width: 66.72%;
+}
+
+@media (min-width: $screen-sm) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .container {
+    padding: 0 70px;
+  }
 }

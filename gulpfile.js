@@ -85,6 +85,7 @@ function buildStyles(cb) {
 // });
 function buildScripts(cb) {
   gulp.src(srcPath + '/**/*.js')
+    .pipe(plumber())
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(buildPath + 'scripts/'));
@@ -171,7 +172,7 @@ function serve(cb) {
   
     gulp.watch(srcPath + '**/*.pug', gulp.series(buildMarkup, reload));
     gulp.watch(srcPath + '**/*.scss', buildStyles);
-    gulp.watch(srcPath + '/**/*.js', gulp.series(buildScripts, reload));
+    gulp.watch(srcPath + '**/*.js', gulp.series(buildScripts, reload));
     gulp.watch(srcPath + 'img/*', gulp.series(buildImages, reload));
   }))();
 

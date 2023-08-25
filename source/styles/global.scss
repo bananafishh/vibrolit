@@ -95,19 +95,16 @@ h3 {
   }
 }
 
-.is-hidden {
+.hidden {
   display: none;
 }
 
-.is-visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   overflow: hidden;
+  white-space: nowrap;
 }

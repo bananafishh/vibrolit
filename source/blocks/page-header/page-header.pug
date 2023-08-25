@@ -1,5 +1,5 @@
 doctype html
-html(lang="ru")
+html.document(lang="ru")
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -14,8 +14,8 @@ html(lang="ru")
   body
     header.page-header
       div.container
-        div.page-header__row.row
-          a.logo.col-2(href="/")
+        div.page-header__content
+          a.logo.page-header__logo(href="/")
             <svg width="44" height="49" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m22.57 20.179-.57-.396-.57.396-18 12.5-1.183.821 1.183.821 18 12.5.57.397.57-.397 18-12.5 1.183-.821-1.183-.821-18-12.5Z" stroke="#243048" stroke-width="2"/>
               <path d="m22.57 14.179-.57-.396-.57.396-18 12.5-1.183.821 1.183.821 18 12.5.57.397.57-.397 18-12.5 1.183-.821-1.183-.821-18-12.5Z" stroke="#243048" stroke-width="2"/>
@@ -25,21 +25,40 @@ html(lang="ru")
 
             span.logo__text Вибролит
 
-          nav.main-nav.col-8
+          nav.main-nav.js-main-nav
             ul.main-nav__list 
               li.main-nav__item
-                a.main-nav__link(href="#technology") Технология
+                a.main-nav__link.js-main-nav-link(href="#technology") 
+                  span.main-nav__link-number 01.
+                  | Технология
 
               li.main-nav__item
-                a.main-nav__link(href="#advantages") Преимущества
+                a.main-nav__link.js-main-nav-link(href="#advantages")
+                  span.main-nav__link-number 02.
+                  | Преимущества
 
               li.main-nav__item
-                a.main-nav__link(href="#catalog") Каталог
+                a.main-nav__link.js-main-nav-link(href="#catalog")
+                  span.main-nav__link-number 03.
+                  | Каталог
 
               li.main-nav__item
-                a.main-nav__link(href="#portfolio") Наши работы
+                a.main-nav__link.js-main-nav-link(href="#portfolio")
+                  span.main-nav__link-number 04.
+                  | Наши работы
 
-          address.page-header__address.col-2
-            a.page-header__phone(href="tel:+79094930016") +7 (909) 493-00-16
+          .page-header__right-col
+            address.page-header__address
+              a.page-header__phone(href="tel:+79094930016") +7 (909) 493-00-16
+
+              a.icon-button.page-header__phone-button(href="tel:+79094930016")
+                span.visually-hidden +7 (909) 493-00-16
+
+                <svg width="22" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m17.08 15.15-4.16.889c-2.808-1.555-4.544-3.342-5.554-6.127l.778-4.6L6.674 1H2.886C1.747 1 .851 2.038 1.021 3.28c.424 3.1 1.676 8.723 5.336 12.759 3.842 4.24 9.377 6.078 12.423 6.81 1.177.282 2.22-.73 2.22-2.058v-3.993l-3.92-1.648Z" stroke="#243048" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+            button.icon-button.menu-button.js-menu-button
+              span.menu-button__label Меню
 
       

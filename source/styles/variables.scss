@@ -15,7 +15,7 @@
 $lucky-point:#243048;
 $summer-sky:#1698d9;
 $summer-sky-light:#2ea8e6;
-$solitude:#e6Ebee;
+$solitude:#e6ebee;
 
 /**
 * Красная палитра
@@ -53,9 +53,11 @@ $color-text: $lucky-point;
 $color-text-light: $dark-gray;
 $color-text-dark: $black;
 $color-text-contrasting: $romance;
+$color-text-accented: $cinnabar;
 $color-text-warning: $laser-lemon;
 
 $bg-primary: $lucky-point;
+$bg-secondary: $solitude;
 
 $color-card-default: $summer-sky;
 $color-card-default-hover: $summer-sky-light;
@@ -80,7 +82,7 @@ $color-button-primary-bg: $cinnabar;
 $color-border: $cinnabar;
 $color-border-huge: rgba($cinnabar, .7);
 
-$color-section-bg-primary: $solitude;
+$color-section-bg-primary: $bg-secondary;
 $color-section-bg-secondary: $lucky-point;
 $color-page-bg: $white;
 $color-feature-icon-bg: $romance;
