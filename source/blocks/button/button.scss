@@ -5,7 +5,7 @@
     padding: 16px 34px;
     border: 2px solid $color-button-border;
     font-family: Oswald, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1;
     text-transform: uppercase;
     text-decoration: none;
@@ -44,4 +44,10 @@
 
 .button--greedy {
     width: 100%;
+}
+
+@media (min-width: $screen-md) {
+    .button {
+        font-size: 18px;
+    }
 }

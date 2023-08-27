@@ -1,4 +1,12 @@
+@use '../../styles/variables' as *;
+
 .subtitle {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.25;
+}
+
+@media (min-width: $screen-md) {
+    .subtitle {
+        font-size: 24px;
+    }
 }

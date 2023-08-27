@@ -1,5 +1,25 @@
+@use '../../styles/variables' as *;
+
+.button-group {
+    text-align: center;
+}
+
 .button-group__item {
     &:not(:last-child) {
-        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: $screen-sm) {
+    .button-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-group__item {
+        &:not(:last-child) {
+            margin-right: 15px;
+            margin-bottom: 0;
+        }
     }
 }

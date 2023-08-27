@@ -52,6 +52,7 @@ Session.vim
 # -- Public --
 /public
 /public-sandbox
+/build
 
 
 # -- Tests --

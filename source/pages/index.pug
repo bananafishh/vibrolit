@@ -5,18 +5,20 @@ main
   section.hero-section
     .container
       h1.hero-section__title
-        | Производим тротуарную плитку
+        | Производим тротуарную плитку 
         br
         span.hero-section__bordered-text высокого качества
 
       p.subtitle.hero-section__subtitle 
-        | Выбирая нас, вы&nbsp;всегда можете рассчитывать на&nbsp;изготовление плитки
-        br 
-        | в&nbsp;оговорённый срок, её&nbsp;прочность и&nbsp;долговечность
+        | Выбирая нас, вы&nbsp;всегда можете рассчитывать на&nbsp;изготовление плитки в&nbsp;оговорённый срок,
+        | её&nbsp;прочность и&nbsp;долговечность
 
-      .button-group.hero-section__button-group
-        a.button.button--secondary.button-group__item(href="#catalog") Смотреть каталог
-        a.button.button-group__item(href="#portfolio") Смотреть работы
+      .button-group
+        .button-group__item
+          a.button.button--secondary(href="#catalog") Смотреть каталог
+
+        .button-group__item
+          a.button(href="#portfolio") Смотреть работы
 
 
   section.section#technology
