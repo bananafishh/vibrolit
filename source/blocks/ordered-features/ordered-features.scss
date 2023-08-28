@@ -1,7 +1,6 @@
+@use '../../styles/variables' as *;
+
 .ordered-features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
     padding: 0;
     list-style: none;
 }
@@ -9,11 +8,51 @@
 .ordered-features__title {
     margin-bottom: 10px;
     font-family: Oswald, Arial, sans-serif;
-    font-size: 120px;
+    font-size: 50px;
     font-weight: 500;
     line-height: 1;
 }
 
 .ordered-features__text {
     margin: 0;
+}
+
+@media (max-width: calc($screen-sm - 1px)) {
+    .ordered-features__item {
+        text-align: center;
+    }
+}
+
+@media (max-width: calc($screen-md - 1px)) {
+    .ordered-features__item {
+        &:not(last-child) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width: $screen-sm) and (max-width: calc($screen-md - 1px)) {
+    .ordered-features__item {
+        display: flex;
+        align-items: center;
+    }
+
+    .ordered-features__title { 
+        width: 52px;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .ordered-features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+
+    .ordered-features__title { 
+        margin-left: -7px;
+        font-size: 120px;
+    }
 }

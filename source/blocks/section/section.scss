@@ -19,27 +19,13 @@
   margin: 0 auto 57px;
 }
 
-.section__text {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: -45px;
-    width: 5px;
-    height: 100%;
-    background-color: $color-border;
-  }
-}
-
 .section__features {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .section__ordered-features {
-  margin-top: 18px;
+  margin-top: 25px;
   margin-bottom: 0;
 }
 
@@ -89,4 +75,25 @@
 
 .section__gallery {
   margin: 35px 0 0;
+}
+
+@media (min-width: $screen-md) {
+  .section__text {
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -45px;
+      width: 5px;
+      height: 100%;
+      background-color: $color-border;
+    }
+  }
+
+  .section__ordered-features {
+    margin-top: 18px;
+  }
+  
 }

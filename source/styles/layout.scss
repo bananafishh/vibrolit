@@ -9,7 +9,6 @@
 
 .text-container {
   max-width: 848px;
-  padding-left: 45px;
 }
 
 .row {
@@ -42,6 +41,12 @@
 @media (min-width: $screen-sm) {
   .container {
     padding: 0 20px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .text-container {
+    padding-left: 45px;
   }
 }
 
