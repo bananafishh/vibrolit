@@ -22,6 +22,10 @@
     justify-content: right;
 }
 
+.page-header__address {
+    grid-column: span 3;
+}
+
 .page-header__phone {
     font-family: Oswald, Arial, sans-serif;
     font-weight: 300;
@@ -51,7 +55,22 @@
 
 @media (min-width: $screen-lg) {
     .page-header__content {
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .page-header__logo {
+        grid-column: span 3;
+    }
+
+    .page-header__nav {
+        grid-column: span 6;
+    }
+
+    .page-header__right-col {
+        grid-column: span 9;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        column-gap: 30px;
     }
 
     .page-header__address {
