@@ -1,31 +1,64 @@
 @use '../../styles/variables' as *;
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px 10px;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     list-style: none;
 }
 
-.gallery__item {
-    &:nth-child(2),
-    &:nth-child(3) {
-        grid-column: span 2;
+.gallery__item_promo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: $color-text;
+    padding: 30px;
+    background-color: $bg-secondary;
+}
+
+.gallery__item-text {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery__item-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid $color-text;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        border-bottom-color: transparent;
+    }
+}
+
+@media (max-width: calc($screen-md - 1px)) {
+    .gallery__item {
+        &:nth-child(3),
+        &:nth-child(4) {
+            display: none;
+        }
     }
 
-    &--promo {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        color: $color-text-contrasting;
-        padding: 27px;
-        width: 261px;
-        height: 261px;
-        background-color: $color-gallery-item-bg;
+    .gallery__item_promo {
+        order: 1;
+    }
 
+    .gallery__img_tablet {
+        display: none;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px 5px;
+    }
+
+    .gallery__item {
         &::before,
         &::after {
             content: "";
@@ -45,12 +78,20 @@
         &::after {
             right: 10px;
         }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            grid-column: span 2;
+        }
+    }
+
+    .gallery__item_promo {
+        color: $color-text-contrasting;
+        background-color: $bg-primary;
     }
 
     .gallery__item-text {
         position: relative;
-        margin: 0;
-        text-align: center;
 
         &::before {
             content: "";
@@ -65,13 +106,10 @@
     }
 
     .gallery__item-link {
-        color: inherit;
-        text-decoration: none;
-        border-bottom: 1px solid $color-text-contrasting;
-        transition: all .15s ease-in-out;
+        border-color: $color-text-contrasting;
+    }
 
-        &:hover {
-            border-bottom-color: transparent;
-        }
+    .gallery__img_mobile {
+        display: none;
     }
 }
