@@ -40,15 +40,24 @@ main
 
         ol.ordered-features.section__ordered-features
           li.ordered-features__item
-            .ordered-features__title 01
+            .ordered-features__title
+              | 01
+              span.ordered-features__title-dot .
+
             p.ordered-features__text Использование для производства сырья высокого качества
 
           li.ordered-features__item
-            .ordered-features__title 02
+            .ordered-features__title
+              | 02
+              span.ordered-features__title-dot .
+              
             p.ordered-features__text Строгое соблюдение технологических норм производства
 
           li.ordered-features__item
-            .ordered-features__title 03
+            .ordered-features__title
+              | 03
+              span.ordered-features__title-dot .
+
             p.ordered-features__text Соответствие готовых изделий стандарту ГОСТ 17608-91
 
 
@@ -57,7 +66,7 @@ main
       h2.section__title.section__title--complex Преимущества нашей плитки
 
       p.subtitle.section__subtitle
-        | Мы&nbsp;предоставляем гарантию на&nbsp;10&nbsp;лет, потому что уверены в&nbsp;высоком качестве нашей
+        | Мы&nbsp;предоставляем гарантию на&nbsp;5&nbsp;лет, потому что уверены в&nbsp;высоком качестве нашей
         | продукции
 
       ul.features.section__features
@@ -83,76 +92,116 @@ main
       h2.section__title.section__title--complex Каталог плиток
       p.subtitle.section__subtitle Выберите подходящую вам форму плитки, а&nbsp;цвет подберём вместе
 
-      ul.cards.section__cards
-        li
-          article.card
-            .card__img
-              img(src="img/product-img-1.png" width="205" height="144" alt="")
+      .cards.slider
+        .swiper
+          ul.cards__list.section__cards.swiper-wrapper
+            li.swiper-slide
+              article.card
+                .card__img
+                  img(src="img/product-img-2.png" width="144" height="144" alt="")
 
-            .card__body
-              h3.card__title Сахара
+                .card__body
+                  h3.card__title Каменный цветок
 
-              dl.card__table
-                .card__table-row
-                  dt Размер (мм):
-                  dd 570х570х40
+                  dl.card__table
+                    .card__table-row
+                      dt Размер (мм):
+                      dd 315x230x40
 
-                .card__table-row
-                  dt Цена:
-                  dd 800 ₽
+                    .card__table-row
+                      dt Цена:
+                      dd 800 ₽
 
-                .card__table-row
-                  dt Наличие:
-                  dd В наличии
+                    .card__table-row
+                      dt Наличие:
+                      dd В наличии
 
-              a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
+                  a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
 
-        li
-          article.card
-            .card__img
-              img(src="img/product-img-2.png" width="205" height="144" alt="")
+            li.swiper-slide
+              article.card
+                .card__img
+                  img(src="img/product-img-3.png" width="205" heigth="144" alt="")
 
-            .card__body
-              h3.card__title Каменный цветок
+                .card__body
+                  h3.card__title Бархан
 
-              dl.card__table
-                .card__table-row
-                  dt Размер (мм):
-                  dd 315x230x40
+                  dl.card__table
+                    .card__table-row
+                      dt Размер (мм):
+                      dd 300x300х40, 79x79х40
 
-                .card__table-row
-                  dt Цена:
-                  dd 750 ₽
+                    .card__table-row
+                      dt Цена:
+                      dd 800 ₽
 
-                .card__table-row
-                  dt Наличие:
-                  dd В наличии
+                    .card__table-row
+                      dt Наличие:
+                      dd В наличии
 
-              a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
+                  a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
 
-        li
-          article.card
-            .card__img
-              img(src="img/product-img-3.png" width="205" heigth="144" alt="")
+            li.swiper-slide
+              article.card
+                .card__img
+                  img(src="img/product-img-4.png" width="144" heigth="144" alt="")
 
-            .card__body
-              h3.card__title Бархан
+                .card__body
+                  h3.card__title Старый город
 
-              dl.card__table
-                .card__table-row
-                  dt Размер (мм):
-                  dd 300x300х40, 79x79х40
+                  dl.card__table
+                    .card__table-row
+                      dt Размер (мм):
+                      dd 100x150х50, 200x150х50
 
-                .card__table-row
-                  dt Цена:
-                  dd 750 ₽
+                    .card__table-row
+                      dt Цена:
+                      dd 800 ₽
 
-                .card__table-row
-                  dt Наличие:
-                  dd В наличии
+                    .card__table-row
+                      dt Наличие:
+                      dd В наличии
 
-              a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
+                  a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
 
+            li.swiper-slide
+              article.card
+                .card__img
+                  img(src="img/product-img-1.png" width="205" height="144" alt="")
+
+                .card__body
+                  h3.card__title Сахара
+
+                  dl.card__table
+                    .card__table-row
+                      dt Размер (мм):
+                      dd 570х570х40
+
+                    .card__table-row
+                      dt Цена:
+                      dd 850 ₽
+
+                    .card__table-row
+                      dt Наличие:
+                      dd В наличии
+
+                  a.button.button--primary.button--greedy(href="tel:+79094930016") Заказать
+
+        .swiper-pagination
+
+        button.icon-button.icon-button_ghost.slider__button-prev 
+          span.visually-hidden Показать предыдущую карточку
+
+          <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1L1.5 8.5L9 16" stroke="#243048" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        button.icon-button.icon-button_ghost.slider__button-next
+          span.visually-hidden Показать следующую карточку
+
+          <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L8.5 8.5L1 16" stroke="#243048" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
 
   section.section#portfolio
     .container
@@ -170,18 +219,19 @@ main
             | не&nbsp;предоставляем таких услуг. Но&nbsp;если у&nbsp;вас возникли вопросы по&nbsp;плитке 
             | и&nbsp;её&nbsp;эксплуатационным характеристикам, это к&nbsp;нам.
 
-        ul.gallery.section__gallery.grid
-          li.gallery__item.gallery__item--promo
+        ul.gallery.section__gallery.grid      
+          li.gallery__item.gallery__item_promo
             p.gallery__item-text Все работы можно посмотреть в нашей #[a.gallery__item-link(href="https://www.instagram.com/p/CvnCXrqtoSB/?igshid=NjZiM2M3MzlxNA==") фотогалерее]
 
           li.gallery__item
-            img(src="img/gallery-img-1.jpg" alt="")
+            img.gallery__img.gallery__img_mobile(src="img/gallery-img-4.jpg" alt="")
+            img.gallery__img.gallery__img_tablet(src="img/gallery-img-1.jpg" alt="")
 
           li.gallery__item
-            img(src="img/gallery-img-2.jpg" alt="")
+            img.gallery__img(src="img/gallery-img-2.jpg" alt="")
 
           li.gallery__item
-            img(src="img/gallery-img-3.jpg" alt="")
+            img.gallery__img(src="img/gallery-img-3.jpg" alt="")
             
 
 include ../blocks/page-footer/page-footer

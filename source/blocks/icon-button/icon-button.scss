@@ -4,20 +4,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 43px;
-    height: 43px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     background-color: $bg-secondary;
     border: none;
     border-radius: 5px;
 }
 
-.icon-button__text {
-
+.icon-button_large {
+    width: 43px;
+    height: 43px;
 }
 
-@media (min-width: $screen-lg) {
-    .icon-button {
-        display: none;
-    }
+.icon-button_ghost {
+    background-color: transparent;
+    border: 2px solid $color-button-border;
 }

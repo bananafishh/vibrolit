@@ -27,7 +27,7 @@
 
 .card__table {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 14px;
 
     dt {
         font-weight: 700;
@@ -40,8 +40,25 @@
 
 .card__table-row {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
     padding: 6px 0 9px;
     border-bottom: 1px solid $color-card-border;
+}
+
+@media (min-width: $screen-sm) {
+    .card__table {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .card__table {
+        font-size: 18px;
+
+        dd {
+            font-size: 16px;
+        }
+    }
 }
 

@@ -56,3 +56,9 @@
         transform: rotate(-45deg);
     }
 }
+
+@media (min-width: $screen-lg) {
+    .menu-button {
+        display: none;
+    }
+}

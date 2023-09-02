@@ -25,7 +25,7 @@
 }
 
 .section__ordered-features {
-  margin-top: 25px;
+  margin-top: 35px;
   margin-bottom: 0;
 }
 
@@ -52,20 +52,20 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
-    bottom: 20px;
-    width: 9px;
+    top: 10px;
+    bottom: 10px;
+    width: 7px;
     background:
-      radial-gradient(circle 9px at 4.5px 4.5px, $color-text-contrasting 50%, transparent 51%),
-      radial-gradient(circle 9px at 4.5px calc(100% - 4.5px), $color-text-contrasting 50%, transparent 51%);
+      radial-gradient(circle 7px at 3.5px 3.5px, $color-text-contrasting 50%, transparent 51%),
+      radial-gradient(circle 7px at 3.5px calc(100% - 3.5px), $color-text-contrasting 50%, transparent 51%);
   }
 
   &::before {
-    left: 20px;
+    left: 10px;
   }
 
   &::after {
-    right: 20px;
+    right: 10px;
   }
 }
 
@@ -94,6 +94,16 @@
 
   .section__ordered-features {
     margin-top: 18px;
+  }
+
+  .section--most-notable {
+    &::before,
+    &::after {
+      width: 9px;
+      background:
+        radial-gradient(circle 9px at 4.5px 4.5px, $color-text-contrasting 50%, transparent 51%),
+        radial-gradient(circle 9px at 4.5px calc(100% - 4.5px), $color-text-contrasting 50%, transparent 51%);
+    }
   }
   
 }

@@ -3,6 +3,8 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* Prevents font scaling in Safari landscape mode while allowing user zoom */
+  -webkit-text-size-adjust: 100%; 
 }
 
 *,
