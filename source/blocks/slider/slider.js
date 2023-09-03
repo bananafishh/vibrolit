@@ -6,8 +6,8 @@ const slider = new Swiper('.swiper', {
         710: {
           slidesPerView: 2,
         },
-        // when window width is >= 1200px
-        1200: {
+        // when window width is >= 1300px
+        1300: {
           slidesPerView: 3,
         },
     },
