@@ -16,21 +16,20 @@
     text-decoration: none;
 }
 
-@media (max-width: calc($screen-md - 1px)) {
+@media (max-width: calc($screen-sm - 1px)) {
     .page-footer__content {
         text-align: center;
     }
 
     .page-footer__logo {
-        margin-bottom: 15px;
+        display: none;
     }
 }
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-sm) {
     .page-footer__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 30px;
     }
 
     .page-footer__address {
