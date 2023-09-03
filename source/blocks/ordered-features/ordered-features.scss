@@ -34,7 +34,7 @@
         background-color: $bg-secondary;
         border-radius: 5px;
 
-        &:not(last-child) {
+        &:not(:last-child) {
             margin-bottom: 25px;
         }
     }
