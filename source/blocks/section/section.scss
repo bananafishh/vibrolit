@@ -30,7 +30,7 @@
 }
 
 .section--more-notable {
-  background: $color-section-bg-primary url('../../img/section-bg.svg');
+  background: $bg-secondary url('../../img/section-bg.svg');
 
   .section__title,
   .section__subtitle {
@@ -41,7 +41,7 @@
 .section--most-notable {
   position: relative;
   color: $color-text-contrasting;
-  background-color: $color-section-bg-secondary;
+  background-color: $bg-primary;
 
   .section__title,
   .section__subtitle {

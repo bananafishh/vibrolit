@@ -1,7 +1,7 @@
 @use '../../styles/variables' as *;
 
 .card {
-    background-color: $color-card-bg;
+    background-color: $bg-default;
 
     &:hover {
         box-shadow: 0 0 20px 0 $color-card-shadow;
@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    background-color: $color-card-img-bg;
+    background-color: $bg-tertiary;
 }
 
 .card__table {
