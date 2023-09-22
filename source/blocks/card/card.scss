@@ -1,8 +1,9 @@
 @use '../../styles/variables' as *;
 
 .card {
+    container-type: inline-size;
     background-color: $bg-default;
-
+    
     &:hover {
         box-shadow: 0 0 20px 0 $color-card-shadow;
     }
@@ -21,12 +22,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 0;
     background-color: $bg-tertiary;
 }
 
 .card__table {
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     font-size: 14px;
 
     dt {
@@ -46,19 +47,19 @@
     border-bottom: 1px solid $color-card-border;
 }
 
-@media (min-width: $screen-sm) {
+@container (min-width: 335px) {
     .card__table {
         font-size: 16px;
     }
 }
 
-@media (min-width: $screen-md) {
-    .card__table {
-        font-size: 18px;
+@container (min-width: 370px) {
+    .card__img {
+        padding: 50px 0;
+    }
 
-        dd {
-            font-size: 16px;
-        }
+    .card__table {
+      font-size: 18px;
     }
 }
 
