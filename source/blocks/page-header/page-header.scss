@@ -1,7 +1,9 @@
 @use '../../styles/variables' as *;
 
 .page-header {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     background-color: $bg-default;
 }
 
@@ -33,6 +35,10 @@
     font-style: normal;
     color: inherit;
     text-decoration: none;
+}
+
+.page-header--sticky {
+    box-shadow: 0 0 10px $color-shadow;
 }
 
 @media (max-width: calc($screen-md - 1px)) {
