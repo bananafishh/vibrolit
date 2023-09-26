@@ -15,7 +15,7 @@
 }
 
 .page-header__logo {
-    padding: 16px 0;
+    padding: 17px 0;
 }
 
 .page-header__right-col {
@@ -38,6 +38,10 @@
 }
 
 .page-header--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     box-shadow: 0 0 10px $color-shadow;
 }
 
