@@ -1,8 +1,10 @@
 @use '../../styles/variables' as *;
 
 .page-header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
     background-color: $bg-default;
 }
@@ -38,10 +40,6 @@
 }
 
 .page-header--sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     box-shadow: 0 0 10px $color-shadow;
 }
 
