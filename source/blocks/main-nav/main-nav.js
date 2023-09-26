@@ -14,18 +14,6 @@
             currentMainNavLink.classList.add('main-nav__link--active');
         }
     }
-
-    function scrollToTargetSection(event, currentMainNavLink) {
-        event.preventDefault();
-
-        const targetSectionPosition = document.querySelector(`${currentMainNavLink.hash}`).getBoundingClientRect().top + window.scrollY;
-        const stickyPageHeaderHeight = document.querySelector('.js-page-header').clientHeight;
-    
-        window.scrollTo({
-            top: targetSectionPosition - stickyPageHeaderHeight,
-            behavior: 'smooth',
-       });
-    }
     
     mainNav.addEventListener('click', event => {
         const currentMainNavLink = event.target;
