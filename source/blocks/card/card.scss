@@ -28,7 +28,7 @@
 
 .card__table {
     margin: 0 0 30px;
-    font-size: 14px;
+    font-size: 13px;
 
     dt {
         font-weight: 700;
@@ -45,6 +45,12 @@
     justify-content: space-between;
     padding: 6px 0 9px;
     border-bottom: 1px solid $color-card-border;
+}
+
+@container (min-width: 300px) {
+    .card__table {
+        font-size: 14px;
+    }
 }
 
 @container (min-width: 335px) {
