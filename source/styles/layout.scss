@@ -11,33 +11,6 @@
   max-width: 848px;
 }
 
-.row {
-  display: flex;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-[class*="col-"] {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.col-2 {
-  width: 16.64%;
-}
-
-.col-3 {
-  width: 33.28%;
-}
-
-.col-4 {
-  width: 33.36%;
-}
-
-.col-8 {
-  width: 66.72%;
-}
-
 @media (min-width: $screen-md) {
   .text-container {
     padding-left: 45px;
