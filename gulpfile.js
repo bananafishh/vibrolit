@@ -142,7 +142,8 @@ function clean(cb) {
 function build(cb) {
   (gulp.series(
     clean,
-    gulp.parallel(buildStyles, buildScripts, buildFonts, buildImages),
+    gulp.parallel(buildScripts, buildFonts, buildImages),
+    buildStyles,
     buildMarkup,
   ))();
 
