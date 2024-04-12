@@ -56,8 +56,8 @@
     bottom: 10px;
     width: 7px;
     background:
-      radial-gradient(circle 7px at 3.5px 3.5px, $color-text-contrasting 50%, transparent 51%),
-      radial-gradient(circle 7px at 3.5px calc(100% - 3.5px), $color-text-contrasting 50%, transparent 51%);
+      radial-gradient(3.5px at 50% 3.5px, $color-text-contrasting 99.9%, transparent 100%),
+      radial-gradient(3.5px at 50% calc(100% - 3.5px), $color-text-contrasting 99.9%, transparent 100%);
   }
 
   &::before {
@@ -101,8 +101,8 @@
     &::after {
       width: 9px;
       background:
-        radial-gradient(circle 9px at 4.5px 4.5px, $color-text-contrasting 50%, transparent 51%),
-        radial-gradient(circle 9px at 4.5px calc(100% - 4.5px), $color-text-contrasting 50%, transparent 51%);
+        radial-gradient(4.5px at 50% 4.5px, $color-text-contrasting 99.9%, transparent 100%),
+        radial-gradient(4.5px at 50% calc(100% - 4.5px), $color-text-contrasting 99.9%, transparent 100%);
     }
   }
   
