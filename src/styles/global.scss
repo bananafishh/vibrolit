@@ -85,22 +85,3 @@ h3 {
     }
   }
 }
-
-
-/**
-* Классы-хелперы
-*/
-
-.text-small {
-  font-size: rem(13px, $fs-base);
-  line-height: 1.231;
-  color: $color-text-contrasting;
-
-  &--warning {
-    color: $color-text-warning;
-  }
-}
-
-.hidden {
-  display: none;
-}
