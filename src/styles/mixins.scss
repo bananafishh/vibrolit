@@ -5,3 +5,12 @@
 @function rem($px, $font-size: $font-size--root) {
   @return ((($px / ($px * 0 + 1)) * 100 / ($font-size / 1px)) / 100) * 1rem;
 }
+
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
