@@ -1,4 +1,6 @@
-@use "typography";
-@use "global";
-@use "layout";
-@use "../blocks/**/*.scss";
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "global";
+@import "layout";
+@import "../components/**/*.scss";
